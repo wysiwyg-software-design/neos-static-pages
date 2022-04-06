@@ -1,0 +1,5 @@
+prototype(Wysiwyg.StaticPages:JavaScripts.Head) < prototype(Neos.Fusion:Component) {
+    page = ${q(documentNode).property('staticPage')}
+
+    renderer = ${StaticPages.Loader.headScripts(props.page)}
+}

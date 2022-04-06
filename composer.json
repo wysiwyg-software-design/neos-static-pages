@@ -1,0 +1,21 @@
+{
+    "description": "A easy way to include a predesigned page into Neos CMS",
+    "type": "neos-package",
+    "name": "wysiwyg/neos-static-pages",
+    "require": {
+        "php": ">=7.4",
+        "neos/flow": "*",
+        "neos/neos": "^5.0 | ^7.0",
+        "symfony/dom-crawler": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wysiwyg\\StaticPages\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Wysiwyg.StaticPages"
+        }
+    }
+}
