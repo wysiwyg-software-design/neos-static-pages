@@ -12,10 +12,4 @@ Wysiwyg:
     rootFolder: '%FLOW_PATH_ROOT%'
     contentSelector: 'main'
     pageGroups:
-      default:
-        firstPage:
-          label: 'First Test Page'
-          icon: 'fa-solid fa-bold'
-          file: 'ProjectSite/tubag-100-years.php'
-          dimensionConstraints:
-            language: ['de']
+      default: []
