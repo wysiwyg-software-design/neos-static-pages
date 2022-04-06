@@ -4,7 +4,7 @@
     "name": "wy/neos-static-pages",
     "require": {
         "php": ">=7.4",
-        "neos/neos": "^7.0",
+        "neos/neos": "*",
         "symfony/dom-crawler": "^4.0"
     },
     "autoload": {
