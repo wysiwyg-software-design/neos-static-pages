@@ -1,0 +1,21 @@
+Neos:
+  Fusion:
+    defaultContext:
+      StaticPages.Loader: 'Wysiwyg\StaticPages\Eel\Helper\StaticPageLoaderHelper'
+  Neos:
+    fusion:
+      autoInclude:
+        Wysiwyg.StaticPages: true
+
+Wysiwyg:
+  StaticPages:
+    rootFolder: '%FLOW_PATH_ROOT%'
+    contentSelector: 'main'
+    pageGroups:
+      default:
+        firstPage:
+          label: 'First Test Page'
+          icon: 'fa-solid fa-bold'
+          file: 'ProjectSite/tubag-100-years.php'
+          dimensionConstraints:
+            language: ['de']

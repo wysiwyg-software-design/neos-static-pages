@@ -1,0 +1,2 @@
+Wysiwyg_Static_Pages:
+  backend: Neos\Cache\Backend\SimpleFileBackend
