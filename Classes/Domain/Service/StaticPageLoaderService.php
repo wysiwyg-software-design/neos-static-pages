@@ -67,12 +67,14 @@ class StaticPageLoaderService
     /**
      * @param string $fullPageContent
      * @return array
+     * @throws Exception
      */
     protected function extractContent(string $fullPageContent): array
     {
         if (empty($this->config['contentSelector'])) {
-            return $fullPageContent;
+            throw new Exception('No content selector is configured');
         }
+        
         $page = ['stylesheets' => '', 'bodyScripts' => '', 'headScripts' => '', 'content' => ''];
 
         $crawler = new Crawler($fullPageContent);
