@@ -1,5 +1,5 @@
 prototype(Wysiwyg.StaticPages:Stylesheets) < prototype(Neos.Fusion:Component) {
     page = ${q(documentNode).property('staticPage')}
 
-    renderer = ${StaticPages.Loader.stylesheets(props.page)}
+    renderer = ${props.page ? StaticPages.Loader.stylesheets(props.page) : ''}
 }

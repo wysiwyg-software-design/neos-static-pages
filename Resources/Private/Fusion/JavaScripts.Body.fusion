@@ -1,5 +1,5 @@
 prototype(Wysiwyg.StaticPages:JavaScripts.Body) < prototype(Neos.Fusion:Component) {
     page = ${q(documentNode).property('staticPage')}
 
-    renderer = ${StaticPages.Loader.bodyScripts(props.page)}
+    renderer = ${props.page ? StaticPages.Loader.bodyScripts(props.page) : ''}
 }
