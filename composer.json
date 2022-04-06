@@ -1,7 +1,7 @@
 {
     "description": "A easy way to include a predesigned page into Neos CMS",
     "type": "neos-package",
-    "name": "wysiwyg/neos-static-pages",
+    "name": "wy/neos-static-pages",
     "require": {
         "php": ">=7.4",
         "neos/flow": "*",
